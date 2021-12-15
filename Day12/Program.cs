@@ -79,6 +79,7 @@ namespace Day12
                             // We are allowed to go here
                             Route newRoute = Route.FromExisting(node.RouteToNode, routeID++);
                             newRoute.Connections.Add(nextCave.Name);
+
                             nodes.Push(new Node( newRoute , nextCave));
                         }
                         //}
